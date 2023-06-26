@@ -1,0 +1,34 @@
+let main = document.getElementById('main');
+
+    index();
+
+function index(){
+    var lang = localStorage.getItem('lang');
+    if (lang === 'EN') {
+        var content = `
+        <img src="./assets/images/logo.png" alt="logo" class="mx-auto w-4/6 sm:w-3/6 md:w-5/12 xl:w-3/12">
+        <h1 class="text-center text-2xl xl:text-3xl font-medium py-4">Sakurasou: Your Ultimate JLPT Training Resource</h1>
+        <p class="py-1 text-lg xl:text-xl">Sakurasou is an exceptional online platform designed to assist Japanese language learners in their journey towards mastering the Japanese Language Proficiency Test (JLPT). With a comprehensive collection of questions spanning from N5 to N1 levels, Sakurasou provides a powerful resource for individuals seeking to enhance their proficiency in Japanese.</p>
+        <p class="py-1 text-lg xl:text-xl">One of the key aspects that sets Sakurasou apart is its commitment to open-source development. The project is licensed under the MPL-2.0 license, which promotes collaboration and encourages contributors to improve the codebase and expand the question database. By fostering a community-driven approach, Sakurasou aims to provide the most accurate, up-to-date, and diverse set of questions for JLPT preparation.</p>
+        <p class="py-1 text-lg xl:text-xl">We invite language enthusiasts, developers, and Japanese learners from all around the world to actively participate in the project. Your contributions, regardless of your level of expertise, can make a significant impact on the growth and success of Sakurasou. Whether you have suggestions for code optimization, improvements in user experience, or additional questions to enrich the database, your input is highly valued and appreciated.</p>
+        <p class="py-1 text-lg xl:text-xl">To contribute to the project, simply visit the Sakurasou GitHub repository at <a href="https://github.com/DevWebEduardo/Sakurasou" class="underline text-purple-600">GitHub/Sakurasou</a>. There, you can explore the codebase, review existing issues, and propose new features. Collaborate with other developers, share your insights, and submit pull requests to contribute your enhancements to the project. Together, we can create an exceptional platform that empowers Japanese learners worldwide.</p>
+        <p class="py-1 text-lg xl:text-xl">Maintaining and expanding Sakurasou is a straightforward process. The project is built using fundamental web technologies such as JavaScript, HTML, CSS, and the popular Tailwind CSS framework. This technology stack ensures simplicity, flexibility, and ease of maintenance. Even if you're new to the project, the well-structured codebase and clear documentation will make your onboarding process smooth and enjoyable.</p>
+        <p class="py-1 text-lg xl:text-xl">By joining the Sakurasou community, you become part of a dynamic and passionate group of individuals dedicated to supporting Japanese language learners on their path to success. Together, let's shape Sakurasou into the ultimate JLPT training resource, empowering learners to achieve their language goals and fostering a deeper appreciation for the Japanese language and culture.</p>
+        <p class="py-1 text-lg xl:text-xl">Start contributing to Sakurasou today and make a lasting impact on the language learning journey of countless individuals worldwide. Let's collaborate, innovate, and grow together!</p>
+        `;
+        main.innerHTML = content;
+    } else {
+        var content = `
+        <img src="./assets/images/logo.png" alt="logo" class="mx-auto w-4/6 sm:w-3/6 md:w-5/12 xl:w-3/12">
+        <h1 class="text-center text-2xl xl:text-3xl font-medium py-4">Sakurasou: Seu Recurso Definitivo de Treinamento para o JLPT</h1>
+        <p class="py-1 text-lg xl:text-xl">Sakurasou é uma plataforma online excepcional projetada para auxiliar estudantes de língua japonesa em sua jornada para dominar o Teste de Proficiência em Língua Japonesa (JLPT). Com uma ampla coleção de perguntas que abrangem os níveis N5 a N1, o Sakurasou oferece um recurso poderoso para aqueles que buscam aprimorar sua proficiência em japonês.</p>
+        <p class="py-1 text-lg xl:text-xl">Um dos principais aspectos que diferencia o Sakurasou é o seu compromisso com o desenvolvimento de código aberto. O projeto é licenciado sob a licença MPL-2.0, que promove a colaboração e incentiva os contribuidores a melhorar a base de código e expandir o banco de dados de perguntas. Ao promover uma abordagem impulsionada pela comunidade, o Sakurasou tem como objetivo fornecer o conjunto mais preciso, atualizado e diversificado de perguntas para a preparação do JLPT.</p>
+        <p class="py-1 text-lg xl:text-xl">Convidamos entusiastas de línguas, desenvolvedores e estudantes de japonês de todo o mundo a participarem ativamente do projeto. Suas contribuições, independentemente do seu nível de experiência, podem ter um impacto significativo no crescimento e no sucesso do Sakurasou. Se você tiver sugestões para otimização de código, melhorias na experiência do usuário ou perguntas adicionais para enriquecer o banco de dados, sua contribuição será muito valorizada e apreciada.</p>
+        <p class="py-1 text-lg xl:text-xl">Para contribuir com o projeto, visite o repositório do Sakurasou no GitHub em <a href="https://github.com/DevWebEduardo/Sakurasou" class="underline text-purple-600">GitHub/Sakurasou</a>. Lá, você pode explorar a base de código, revisar problemas existentes e propor novos recursos. Colabore com outros desenvolvedores, compartilhe suas ideias e envie solicitações de pull para contribuir com suas melhorias para o projeto. Juntos, podemos criar uma plataforma excepcional que capacita estudantes de japonês em todo o mundo.</p>
+        <p class="py-1 text-lg xl:text-xl">Manter e expandir o Sakurasou é um processo simples. O projeto é construído utilizando tecnologias web fundamentais, como JavaScript, HTML, CSS e o popular framework Tailwind CSS. Essa combinação de tecnologias garante simplicidade, flexibilidade e facilidade de manutenção. Mesmo se você for novo no projeto, a base de código bem estruturada e a documentação clara tornarão seu processo de integração suave e agradável.</p>
+        <p class="py-1 text-lg xl:text-xl">Ao se juntar à comunidade do Sakurasou, você se torna parte de um grupo dinâmico e apaixonado de pessoas dedicadas a apoiar estudantes de língua japonesa em seu caminho para o sucesso. Juntos, vamos transformar o Sakurasou no recurso de treinamento definitivo para o JLPT, capacitando estudantes a alcançar seus objetivos linguísticos e promovendo um maior apreço pela língua e cultura japonesas.</p>
+        <p class="py-1 text-lg xl:text-xl">Comece a contribuir com o Sakurasou hoje e faça um impacto duradouro na jornada de aprendizado de idiomas de inúmeras pessoas ao redor do mundo. Vamos colaborar, inovar e crescer juntos!</p>
+        `;
+        main.innerHTML = content;
+    }    
+}

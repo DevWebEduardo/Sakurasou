@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakurasou</title>
+    <link rel="stylesheet" href="./assets/css/style.tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-300">
+    <header class="w-full md:container mx-auto">
+        <nav class="flex flex-col sm:flex-row justify-center items-center bg-slate-400 sm:h-16 mb-4 md:mt-6 md:rounded text-2xl"> 
+            <div class="flex flex-none justify-between w-full sm:w-auto">
+                <a href="index.html" class="flex items-center">
+                    <h class="pl-3 text-2xl xl:text-3xl font-medium">Sakurasou</h>
+                </a>   
+                <button class="block sm:hidden" id="menu-toggle">
+                    <i class="fa-solid fa-bars fa-2x p-2"></i>
+                </button>
+            </div>
+            <ul class="hidden h-full w-full sm:w-auto bg-gray-400 sm:bg-transparent flex-grow justify-center p-3 sm:p-0 sm:flex-none px-5 ml-auto sm:flex sm:justify-between" id="navbar-default">
+                <a href="index.html"><li class="flex justify-center items-center h-16 sm:h-full px-6 hover:bg-gray-500 text-2xl"><i class="fa-solid fa-house"></i></li></a>
+                <a href="n5.html"><li class="flex justify-center items-center h-16 sm:h-full px-6 hover:bg-gray-500 text-2xl">N5</li></a>
+                <a href="n4.html"><li class="flex justify-center items-center h-16 sm:h-full px-6 hover:bg-gray-500 text-2xl">N4</li></a>
+                <a href="n3.html"><li class="flex justify-center items-center h-16 sm:h-full px-6 hover:bg-gray-500 text-2xl">N3</li></a>
+                <a href="n2.html"><li class="flex justify-center items-center h-16 sm:h-full px-6 hover:bg-gray-500 text-2xl">N2</li></a>
+                <a href="n1.html"><li class="flex justify-center items-center h-16 sm:h-full px-6 hover:bg-gray-500 text-2xl">N1</li></a>
+            </ul>
+        </nav>
+        <div class="flex justify-end mr-4 md:mr-0">
+            <div class="flex mb-4 bg-slate-400 rounded w-28 h-12 p-1">
+                <button class="w-3/6 rounded" id="pt">PT</button>
+                <button class="w-3/6 rounded" id="en">EN</button>
+            </div>
+        </div>
+    </header>
+    <main class="mx-auto w-full bg-gray-50 p-2 md:p-4 md:rounded md:container" id="main">
+
+    </main>
+    <footer class="w-full bg-slate-400 md:mt-6">
+        <section>
+            <div id="cookie-notice" class="fixed bottom-0 left-0 w-full p-4 bg-gray-200 text-center" style="display: none;">
+                <span class="mr-2">This website uses cookies to ensure you get the best experience on our website.</span>
+                <a href="cookies.html" class="text-purple-600">Learn more</a>
+                <button id="accept-cookies" class="bg-purple-600 text-white ml-2 px-4 py-2 rounded">Accept</button>
+            </div>
+            <script>
+                document.getElementById('accept-cookies').addEventListener('click', function() {
+                document.getElementById('cookie-notice').style.display = 'none';
+                sessionStorage.setItem('cookieConsent', 'true');
+                });
+                if (sessionStorage.getItem('cookieConsent')) {
+                    document.getElementById('cookie-notice').style.display = 'none';
+                }else{
+                    document.getElementById('cookie-notice').style.display = 'block';
+                }
+            </script>
+        </section>
+        <div class="flex justify-center mx-auto text-3xl xl:text-5xl md:container py-4 flex-wrap">
+            <div class="flex items-center px-6 py-2">
+                <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                    <a href="https://www.youtube.com/playlist?list=PL3odTKdDSdpCACIzx2lgiw9sHC1KmUk3q" class="text-2xl xl:text-3xl pl-2">JLPT N5</a>
+                </a>
+            </div>
+            <div class="flex items-center px-6 py-2">
+                <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                    <a href="https://www.youtube.com/playlist?list=PL3odTKdDSdpCl1zCX5o4Tf1y9RE86BA11" class="text-2xl xl:text-3xl pl-2">JLPT N4</a>
+                </a>
+            </div>
+            <div class="flex items-center px-6 py-2">
+                <a href="https://www.youtube.com/playlist?list=PL3odTKdDSdpBFycazS8J78VN5Rs5fUTOx">
+                    <i class="fa-brands fa-youtube"></i>
+                    <a href="" class="text-2xl xl:text-3xl pl-2">JLPT N3</a>
+                </a>
+            </div>
+            <div class="flex items-center px-6 py-2">
+                <a href="https://www.youtube.com/playlist?list=PL3odTKdDSdpCbUJBKLOifhFHNKZj1nspC">
+                    <i class="fa-brands fa-youtube"></i>
+                    <a href="" class="text-2xl xl:text-3xl pl-2">JLPT N2</a>
+                </a>
+            </div>
+            <div class="flex items-center px-6 py-2">
+                <a href="https://www.youtube.com/playlist?list=PL3odTKdDSdpB32lWfomdmDnc2JWwS6IU9">
+                    <i class="fa-brands fa-youtube"></i>
+                    <a href="" class="text-2xl xl:text-3xl pl-2">JLPT N1</a>
+                </a>
+            </div>
+        </div>
+        <p class="text-center text-lg 2xl:text-xl bg-slate-700 py-4 text-white">Maintained by <a href="https://solanin.icu" target="_blank" class="underline">Solanin DevBlog</a>.</p>
+    </footer>
+    <script src="assets/js/lang-vars.js"></script>
+    <script src="assets/js/pages/cookies.js"></script>
+    <script src="assets/js/lang-buttons.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
