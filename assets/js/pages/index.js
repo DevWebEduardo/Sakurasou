@@ -6,7 +6,7 @@ function index(){
     var lang = localStorage.getItem('lang');
     if (lang === 'EN') {
         var content = `
-        <img src="./assets/images/logo.png" alt="logo" class="mx-auto w-4/6 sm:w-3/6 md:w-5/12 xl:w-3/12">
+        <img src="/assets/images/logo.png" alt="logo" class="mx-auto w-4/6 sm:w-3/6 md:w-5/12 xl:w-3/12">
         <h1 class="text-center text-2xl xl:text-3xl font-medium py-4">Sakurasou: Your Ultimate JLPT Training Resource</h1>
         <p class="py-1 text-lg xl:text-xl">Sakurasou is an exceptional online platform designed to assist Japanese language learners in their journey towards mastering the Japanese Language Proficiency Test (JLPT). With a comprehensive collection of questions spanning from N5 to N1 levels, Sakurasou provides a powerful resource for individuals seeking to enhance their proficiency in Japanese.</p>
         <p class="py-1 text-lg xl:text-xl">One of the key aspects that sets Sakurasou apart is its commitment to open-source development. The project is licensed under the MPL-2.0 license, which promotes collaboration and encourages contributors to improve the codebase and expand the question database. By fostering a community-driven approach, Sakurasou aims to provide the most accurate, up-to-date, and diverse set of questions for JLPT preparation.</p>
@@ -19,7 +19,7 @@ function index(){
         main.innerHTML = content;
     } else {
         var content = `
-        <img src="./assets/images/logo.png" alt="logo" class="mx-auto w-4/6 sm:w-3/6 md:w-5/12 xl:w-3/12">
+        <img src="/assets/images/logo.png" alt="logo" class="mx-auto w-4/6 sm:w-3/6 md:w-5/12 xl:w-3/12">
         <h1 class="text-center text-2xl xl:text-3xl font-medium py-4">Sakurasou: Seu Recurso Definitivo de Treinamento para o JLPT</h1>
         <p class="py-1 text-lg xl:text-xl">Sakurasou é uma plataforma online excepcional projetada para auxiliar estudantes de língua japonesa em sua jornada para dominar o Teste de Proficiência em Língua Japonesa (JLPT). Com uma ampla coleção de perguntas que abrangem os níveis N5 a N1, o Sakurasou oferece um recurso poderoso para aqueles que buscam aprimorar sua proficiência em japonês.</p>
         <p class="py-1 text-lg xl:text-xl">Um dos principais aspectos que diferencia o Sakurasou é o seu compromisso com o desenvolvimento de código aberto. O projeto é licenciado sob a licença MPL-2.0, que promove a colaboração e incentiva os contribuidores a melhorar a base de código e expandir o banco de dados de perguntas. Ao promover uma abordagem impulsionada pela comunidade, o Sakurasou tem como objetivo fornecer o conjunto mais preciso, atualizado e diversificado de perguntas para a preparação do JLPT.</p>
