@@ -1,4 +1,4 @@
-# Sakurasou
+# Sakurasou - Deprecated
 
 Sakurasou is an exceptional online platform designed to assist Japanese language learners on their journey to master the Japanese Language Proficiency Test (JLPT). With a vast collection of questions spanning from N5 to N1 levels, Sakurasou provides a powerful resource for those seeking to enhance their Japanese proficiency.
 
